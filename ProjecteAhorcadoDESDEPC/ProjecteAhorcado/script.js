@@ -42,17 +42,14 @@ const butons = document.querySelectorAll("#keyboard > button");
 const pantallafinal = document.querySelector(".pantalla-final");
 
 function funcioparaulaRandom() {
-  console.log(nombreAleatori);
   let paraulaaleatoria = palabras[nombreAleatori];
   return paraulaaleatoria;
 }
 
-console.log(paraulaRandom);
-console.log(paraulaRandomArray);
+
 
 function afegirSpans() {
   divParaulaOculta = document.getElementById("paraula-oculta");
-  console.log(paraulaRandom.length);
   for (let j = 0; j < paraulaRandom.length; j++) {
     divParaulaOculta.innerHTML += `<span>_</span>`;
   }
@@ -65,7 +62,6 @@ function lletraCorrecta(lletra) {
 
   for (let i = 0; i < paraulaRandom.length; i++) {
     if (paraulaRandom[i] == lletra) {
-      console.log("Si" + i);
       canviarGuioPerLletra(lletra, i);
       lletraTrobada = true;
     }
@@ -103,7 +99,6 @@ function lletraIncorrecta(lletra) {
   const divImatge = document.querySelector("#imatge > img");
 
   indexGlobal++;
-  console.log(indexGlobal);
   divImatge.src = `./img/hangman/${indexGlobal}.jpg`;
   if (indexGlobal == 7) {
     hasPerdut();
@@ -151,7 +146,6 @@ key.addEventListener('click',(e)=>{
       iniciarCronometroAtras();
     }
     let valorLletra = e.target.value;
-    console.log(valorLletra);
     let esCorrecte = lletraCorrecta(valorLletra.toLowerCase());
     e.target.disabled = true;
     if(esCorrecte == true){
@@ -201,7 +195,6 @@ window.addEventListener('load', () => {
   mostrarRanking();
   const currentPlayer = localStorage.getItem('currentPlayer');
   if (currentPlayer) {
-    console.log(`Jugador actual: ${currentPlayer}`);
     document.getElementById('player-selection').style.display = 'none';
     document.getElementById('player-change').style.display = 'block';       
   } else {
@@ -219,7 +212,6 @@ function guardarPuntuacion(puntuacion) {
   scores.sort((a, b) => b.score - a.score);
   localStorage.setItem('highScores', JSON.stringify(scores));
 
-  console.log('Ranking actualizado: ', scores);
 }
 
 function mostrarRanking() {
