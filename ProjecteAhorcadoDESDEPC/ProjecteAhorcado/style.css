@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,37,121,1) 35%, rgba(167,0,255,1) 100%);
+    color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "ranking timer puntuacion"
+        "ranking imatge palabra"
+        "ranking imatge teclado"
+        "ranking palabras palabras";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 15px;
+    width: 100%;
+    height: calc(100vh - 40px);
+    max-width: 1200px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2.2em;
+    color: #f0f8ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#ranking {
+    grid-area: ranking;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border: 2px solid #dda0dd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #dda0dd;
+}
+
+#ranking h2 {
+    margin-bottom: 10px;
+}
+
+#high-scores {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#timer, #score, #wrong-words {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+#timer {
+    grid-area: timer;
+    text-align: center;
+    font-size: 1.4em;
+    color: #ff6347;
+}
+
+#score {
+    grid-area: puntuacion;
+    text-align: center;
+    font-size: 1.4em;
+    color: #32cd32;
+}
+
+#wrong-words {
+    grid-area: palabras;
+    text-align: center;
+    font-size: 1.4em;
+    color: #1e90ff;
+}
+
+#imatge {
+    grid-area: imatge;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imatge img {
+    max-width: 90%;
+    height: auto;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#paraula-oculta {
+    grid-area: palabra;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 10px;
+    color: #000;
+}
+
+#keyboard {
+    grid-area: teclado;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #7a4dff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #4e2f9e;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    background-color: #37217f;
+}
+
+button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+#ranking, #timer, #score, #wrong-words {
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.5), rgba(138, 43, 226, 0.5));
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ranking {
+    border: 2px solid #dda0dd;
+    font-weight: bold;
+}
+
+#timer {
+    color: #ff6347;
+}
+
+#score {
+    color: #32cd32;
+}
+
+#wrong-words {
+    color: #f4ff1e;
+}
+
+
+#ranking h2 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#high-scores {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#wrong-words, #score {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+button {
+    background-color: #4e2f9e;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #7a4dff;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #37217f;
+    transform: translateY(1px);
+}
+
+button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+.pantalla-final{
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,37,121,1) 35%, rgba(167,0,255,1) 100%);
+        width: 500px;
+        height: 350px;
+        z-index: 1000;
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        opacity: 95%;
+
+}
+
+.antes-partida{
+    visibility: hidden;
+}

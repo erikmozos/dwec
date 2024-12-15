@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #0c139e;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #333;
+    color: ghostwhite;
+    padding: 1rem ;
+    text-align: center;
+}
+
+
+main{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form label{
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input{
+    background-color: ghostwhite;
+    color: #2780;
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+button{
+    background-color: rgb(17, 236, 17);
+    color: rgb(3, 22, 42);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(3, 22, 42);
+    color: rgb(17, 236, 17);
+}

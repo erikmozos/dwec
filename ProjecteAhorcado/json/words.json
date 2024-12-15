@@ -1,0 +1,47 @@
+{
+    "es": {
+
+      "palabras": {
+        "colores": {
+          "facil": ["azul", "rojo"],
+          "medio": ["amarillo", "verde", "negro", "naranja", "morado"],
+          "dificil": []
+        },
+        "naturaleza": {
+          "facil": ["sol", "mar", "rio"],
+          "medio": ["cielo", "luna", "nube", "bosque"],
+          "dificil": ["montana", "estrella"]
+        },
+        "transporte": {
+          "facil": ["tren", "coche"],
+          "medio": ["bicicleta", "barco", "puente", "camino"],
+          "dificil": ["avion", "edificio"]
+        },
+        "hogar": {
+          "facil": ["mesa", "cama", "techo", "puerta"],
+          "medio": ["ventana", "jardin", "lampara", "sofa"],
+          "dificil": ["computadora", "pantalla", "edificio"]
+        },
+        "animales": {
+          "facil": ["pez", "gato", "perro", "ave"],
+          "medio": ["conejo", "vaca"],
+          "dificil": ["caballo", "oveja"]
+        },
+        "frutas": {
+          "facil": ["uva", "pera"],
+          "medio": ["manzana", "melon", "sandia", "fresa"],
+          "dificil": ["naranja"]
+        },
+        "objetos": {
+          "facil": ["libro", "lapiz", "goma", "papel"],
+          "medio": ["carpeta", "mochila", "radio", "altavoz"],
+          "dificil": ["computadora", "teclado", "pantalla"]
+        },
+        "conceptos": {
+          "facil": ["amor", "amigo", "dia"],
+          "medio": ["familia", "esperanza", "felicidad"],
+          "dificil": ["tristeza", "siglo", "alegria"]
+        }
+      }
+    }
+}

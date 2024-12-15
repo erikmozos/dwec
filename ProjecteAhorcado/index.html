@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <style>
+      .pantalla-final, .antes-partida {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .timer-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <title>Ahorcado</title>
+  </head>
+  <body>
+    <h1>Joc del Penjat</h1>
+    <div class="container">
+
+      <div id="player-selection" class="antes-partida hidden">
+        <label for="player-name">Nombre del jugador:</label>
+        <input type="text" id="player-name" />
+        <button id="start-game">Iniciar</button>
+      </div>
+
+      <div class="pantalla-final antes-partida">
+        <div class="victoria antes-partida">
+          <h2>¡Enhorabuena! Has ganado</h2>
+        </div>
+        <div class="derrota antes-partida">
+          <h2>¡Oh no! Has perdido</h2>
+          <p>La palabra era</p>
+          <p id="word"></p> 
+        </div>
+        <button class="play-again hidden">Jugar de nuevo</button>
+      </div>
+
+      <!-- Contenedor de los temporizadores -->
+      <div class="timer-container">
+        <!-- Contenedor del temporizador -->
+        <div id="timer">
+          <span>Tiempo restante: <span id="time">30</span> </span>
+        </div>
+
+        <!-- Contenedor del segundo temporizador -->
+        <div id="second-timer">
+          <span>Tiempo: <span id="second-time">0</span> </span>
+        </div>
+      </div>
+      
+      <div id="imatge">
+        <img src="./img/hangman/0.jpg" alt="" />
+      </div>
+      <!-- Contenedor de la palabra oculta -->
+      <div id="paraula-oculta">
+        <!-- Cada letra es un span para facilitar el estilo dinámico -->
+      </div>
+
+      <!-- Contenedor del teclado -->
+      <div id="keyboard">
+        <button value="Q">Q</button>
+        <button value="W">W</button>
+        <button value="E">E</button>
+        <button value="R">R</button>
+        <button value="T">T</button>
+        <button value="Y">Y</button>
+        <button value="U">U</button>
+        <button value="I">I</button>
+        <button value="O">O</button>
+        <button value="P">P</button>
+        <button value="A">A</button>
+        <button value="S">S</button>
+        <button value="D">D</button>
+        <button value="F">F</button>
+        <button value="G">G</button>
+        <button value="H">H</button>
+        <button value="J">J</button>
+        <button value="K">K</button>
+        <button value="L">L</button>
+        <button value="Ñ">Ñ</button>
+        <button value="Z">Z</button>
+        <button value="X">X</button>
+        <button value="C">C</button>
+        <button value="V">V</button>
+        <button value="B">B</button>
+        <button value="N">N</button>
+        <button value="M">M</button>
+      </div>
+
+      <!-- Contenedor de palabras incorrectas -->
+      <div id="wrong-words">
+        <span><h2>Palabras incorrectas: </h2> <span id="wrong-letters"></span></span>
+      </div>
+
+      <!-- Contenedor de ranking de records personales -->
+      <div id="ranking">
+        <h2>Ranking de Records Personales</h2>
+        <ol id="high-scores">
+          <!-- High scores will be dynamically added here -->
+        </ol>
+      </div>
+    </div>
+    <div></div>
+    <script src="script.js"></script>
+  </body>
+</html>

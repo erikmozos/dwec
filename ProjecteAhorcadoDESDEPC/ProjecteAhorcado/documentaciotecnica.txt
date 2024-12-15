@@ -1,0 +1,53 @@
+1. Descripció General del Projecte
+Aquest projecte és un joc del penjat que es juga directament dins el navegador web. El jugador ha d’endevinar paraules triades aleatòriament abans d’esgotar els intents permesos. La idea principal és oferir una experiència divertida i dinàmica mentre es practiquen les habilitats lingüístiques. Els objectius del joc són crear una interfície intuïtiva i atractiva, i afegir funcionalitats com un temporitzador i un sistema de puntuacions i rànquing.
+
+2. Funcionalitat
+El joc té les següents característiques:
+
+Paraules aleatòries: S’escullen d’un conjunt definit al codi.
+Teclat virtual: Perquè el jugador pitgi les lletres amb clics.
+Visualització dinàmica: Es mostra el progrés del jugador dins la paraula amagada.
+Gestió d’intents: Cada jugador té un màxim de 7 errades abans de perdre.
+Temporitzadors: Un crono general i un compte enrere per cada torn.
+Sistema de puntuació: Es calcula segons el temps restant, els errors fets i la llargada de la paraula.
+Pantalla final: Mostra si el jugador ha guanyat o perdut.
+Rànquing: Les puntuacions queden guardades dins el navegador amb localStorage.
+
+3. Estructura del Projecte
+El projecte està organitzat en tres parts principals:
+
+HTML: Conté l’estructura de la pàgina, com el teclat, l’espai per la paraula amagada, els temporitzadors i la pantalla de resultats.
+CSS: Dissenya l’aparença visual, amb estil pel teclat, les imatges del penjat i les animacions.
+JavaScript: Porta tota la lògica, com la selecció de paraules, validació de les lletres, gestió dels temporitzadors i càlcul de punts.
+
+4. Requisits del Sistema
+Navegador: Recomanat Chrome, Firefox o Edge, amb suport per ES6+.
+JavaScript habilitat: Necessari per a les funcionalitats del joc.
+Resolució mínima: 1024x768 o superior per una visualització òptima.
+
+5. Instal·lació i Configuració
+Descarregar el projecte:
+Clonar el repositori des de GitHub o baixar els arxius en format ZIP.
+
+Estructura de carpetes:
+
+index.html: Pàgina principal del joc.
+styles/: Conté els fitxers CSS.
+scripts/: Conté els fitxers JavaScript.
+img/: Carpeta amb les imatges del penjat.
+Execució:
+Obre el fitxer index.html dins qualsevol navegador modern.
+
+6. Ús del Projecte
+Quan s’obre el fitxer index.html, el jugador veurà:
+
+Un teclat virtual.
+Una paraula amagada representada per guions baixos.
+Temporitzadors i un comptador d’errades.
+Mecànica del joc:
+
+Pitjar lletres al teclat virtual.
+Les correctes es mostren a la paraula.
+Les incorrectes sumen errades i actualitzen la imatge del penjat.
+El joc acaba si s’endevina la paraula o es superen les 7 errades.
+Al final del joc, es mostra la puntuació i aquesta s’afegeix al rànquing guardat localment.

@@ -1,0 +1,85 @@
+# December 12, 2024
+
+---
+
+Cerca de problemes i retocar alguns punts concrets.
+
+---
+
+
+# December 7, 2024
+
+---
+
+He tornat a dissenyar l’estil.
+
+# December 4, 2024
+
+---
+
+Ranking implementat.
+
+---
+
+# December 31, 2024
+
+---
+
+Afegir contingut html amb contenidors de nou jugador i opció de canviar de jugador. També el reiniciar joc. 
+
+---
+
+# November 26, 2024
+
+---
+
+S’afegeix un timer nou, organitzar i separar els dos timers per tenir funció cap envant i cap enrrera.
+
+---
+
+# November 25, 2024
+
+---
+
+Estructura de LocalStorage, creció de personatge i guardar informació important. Posible sistema de puntuació? 
+
+
+---
+
+# November 21, 2024
+
+---
+
+He creat el temporizador a partir del cronometre que teniem fet. Quan un jugador pitja una lletra el temporizador s’inicia. Ara s’ha ordenat el final de partida per funcions, si perds es crida a hasPerdut, si guanyes a hasGuanyat. Sempre desabilita els botons i atura el crono. El hasPerdut es crida quan un jugador es queda sense intents o se l’hi acaba el temps. Ara també si la lletra es correcte el botño canvia a color verd i si es incorrecta a vermell.
+
+---
+
+# November 20, 2024
+
+---
+
+He començat el codi a JS. El teclat fa te un event, la paraula oculta crea spans amb barrabaixes segons la quantitat de caracters. Quan un lletra del teclat es pitjada, es crida la funcio de comprovar la lletra. Es comprova que la lletra estigui a la paraula amb un bucle i si hi és es crida una funció on es passa la paraula i la posició. La funció de canviar la barrabaixa per la lletra.  La mateixa funció de comprovar les lletres comprova si hi queden barresbaixes o no. En cas de que no en quedin el joc finalitza. En cas de que quan pitjam una lletra la funció de comprovar no en troba, es crida la funcio de lletra incorrecta que el que fa és posar la lletra dins un contenidor de lletres falses i canviar la imatge del penjat. Si la imatge del penjat arriba a la darrera (les imatges estan nombrades amb nombres i s’utiliza un index que representa les vides que du), el jugador perd.
+
+---
+
+# November 18, 2024
+
+---
+
+S’ha millorat l’estil per complet.  He dibuixat a paper tot el layout i després l’he adaptat amb alguns canvis a la pàgina. He començat amb el JS. He declarat les primeres variables i creat les primeres funcions. 
+
+També he fet un array amb totes les paraules i la funció que elegeix una paraula aleatoria de dins l’array.
+
+Esctructura creada al JS.
+
+---
+
+# November 14, 2024
+
+---
+
+Html: He creat un contenidor principal on hi haura tot el contingut del joc. Hi ha dins del contenidor la paraula oculta, un contenidor que conté els botons que faran de teclat, un temporizador, no es guarden les paraules incorrectes, la imatge i el ranking personal.
+
+He fet un estil senzill que encara esta per retocar. He triat ja la font que es la Poppins. He decidit fer un layout emprant grid.
+
+---

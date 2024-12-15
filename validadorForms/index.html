@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador De Formularis</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form" id="form">
+            <h2>Register with us</h2>
+            <div class="form-control">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName"  placeholder="Enter your username.">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email"  placeholder="Enter your email.">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password"  placeholder="Create a password.">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="passwordConfirm">Repeat password</label>
+                <input type="password" id="passwordConfirm"  placeholder="Repeat your password.">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="age">Age</label>
+                <input type="text" id="age" placeholder="Enter your age">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="english-level">English Level</label>
+                <select id="english-level" name="english-level">
+                    <option value="">Select your level</option>
+                    <option value="beginner">A2 or lower</option>
+                    <option value="beginner">B1</option>
+                    <option value="intermediate">B2</option>
+                    <option value="advanced">C1</option>
+                    <option value="advanced">C2</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="checkbox" id="terms">
+                <label for="terms">
+                    I agree terms and conditions
+                </label>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
+
+    <script src="script3.js"></script>
+</body>
+</html>

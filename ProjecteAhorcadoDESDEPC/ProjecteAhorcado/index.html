@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Ahorcado</title>
+  </head>
+  <body>
+    <h1>Joc del Penjat</h1>
+    <div class="container">
+
+      <div id="player-selection" class="">
+        <label for="player-name">Nombre del jugador:</label>
+        <input type="text" id="player-name" />
+        <button id="start-game">Iniciar</button>
+      </div>
+      <div id="player-change" class="">
+        <h2></h2>
+        <button id="canviarJugador">Cambiar jugador</button>
+      </div>
+
+      <div class="pantalla-final antes-partida">
+        <div class="victoria antes-partida">
+          <h2>¡Enhorabuena! Has ganado</h2>
+        </div>
+        <div class="derrota antes-partida">
+          <h2>¡Oh no! Has perdido</h2>
+          <p></p>
+          <p id="word"></p> 
+        </div>
+        <button class="play-again hidden">Jugar de nuevo</button>
+      </div>
+
+      <!-- Contenedor de los temporizadores -->
+      <div class="timer-container">
+        <!-- Contenedor del temporizador -->
+        <div id="timer">
+          <span>Tiempo restante: <span id="time">10</span> </span>
+        </div>
+
+        <!-- Contenedor del segundo temporizador -->
+        <div id="second-timer">
+          <span>Tiempo: <span id="second-time">0</span> </span>
+        </div>
+      </div>
+      
+      <div id="imatge">
+        <img src="./img/hangman/0.jpg" alt="" />
+      </div>
+      <!-- Contenedor de la palabra oculta -->
+      <div id="paraula-oculta">
+        <!-- Cada letra es un span para facilitar el estilo dinámico -->
+      </div>
+
+      <!-- Contenedor del teclado -->
+      <div id="keyboard">
+        <button value="Q">Q</button>
+        <button value="W">W</button>
+        <button value="E">E</button>
+        <button value="R">R</button>
+        <button value="T">T</button>
+        <button value="Y">Y</button>
+        <button value="U">U</button>
+        <button value="I">I</button>
+        <button value="O">O</button>
+        <button value="P">P</button>
+        <button value="A">A</button>
+        <button value="S">S</button>
+        <button value="D">D</button>
+        <button value="F">F</button>
+        <button value="G">G</button>
+        <button value="H">H</button>
+        <button value="J">J</button>
+        <button value="K">K</button>
+        <button value="L">L</button>
+        <button value="Ñ">Ñ</button>
+        <button value="Z">Z</button>
+        <button value="X">X</button>
+        <button value="C">C</button>
+        <button value="V">V</button>
+        <button value="B">B</button>
+        <button value="N">N</button>
+        <button value="M">M</button>
+      </div>
+
+      <!-- Contenedor de palabras incorrectas -->
+      <div id="wrong-words">
+        <span><h2>Letras incorrectas <span id="errors"></span>: </h2> <span id="wrong-letters"></span></span>
+      </div>
+
+      <!-- Contenedor de ranking de records personales -->
+      <div id="ranking">
+        <h2>Ranking de Records Personales</h2>
+        <select id="Palabras">
+          <option value="">Ranking general</option>
+            <option value="amarillo">amarillo</option>
+            <option value="azul">azul</option>
+            <option value="rojo">rojo</option>
+            <option value="verde">verde</option>
+            <option value="negro">negro</option>
+            <option value="puerta">puerta</option>
+            <option value="ventana">ventana</option>
+            <option value="techo">techo</option>
+            <option value="carpeta">carpeta</option>
+            <option value="computadora">computadora</option>
+            <option value="telefono">telefono</option>
+            <option value="television">television</option>
+            <option value="radio">radio</option>
+            <option value="altavoz">altavoz</option>
+            <option value="teclado">teclado</option>
+            <option value="raton">raton</option>
+            <option value="pantalla">pantalla</option>
+            <option value="amigo">amigo</option>
+            <option value="familia">familia</option>
+            <option value="amor">amor</option>
+            <option value="felicidad">felicidad</option>
+            <option value="tristeza">tristeza</option>
+            <option value="alegria">alegria</option>
+            <option value="miedo">miedo</option>
+            <option value="esperanza">esperanza</option>
+            <option value="dia">dia</option>
+            <option value="noche">noche</option>
+            <option value="manana">manana</option>
+            <option value="tarde">tarde</option>
+            <option value="semana">semana</option>
+            <option value="mes">mes</option>
+            <option value="siglo">siglo</option>
+        </select>
+        <ol id="high-scores">
+          <!-- High scores will be dynamically added here -->
+        </ol>
+      </div>
+    </div>
+    <div></div>
+    <script src="script.js"></script>
+  </body>
+</html>

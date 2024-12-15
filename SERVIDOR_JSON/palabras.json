@@ -1,0 +1,24 @@
+{
+  "palabras": [
+    {
+      "id": 1,
+      "palabra": "sdad",
+      "dificultad": 1
+    },
+    {
+      "id": 2,
+      "palabra": "asdsad",
+      "dificultad": 0
+    },
+    {
+      "id": 3,
+      "palabra": "Primera",
+      "dificultad": 2
+    },
+    {
+      "id": 4,
+      "palabra": "weqweqwe",
+      "dificultad": 2
+    }
+  ]
+}
